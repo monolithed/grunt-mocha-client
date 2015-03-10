@@ -2,7 +2,6 @@
 
 [![npm version badge](https://img.shields.io/npm/v/grunt-mocha-client.svg)](https://www.npmjs.org/package/grunt-mocha-client)
 [![Build Status](https://travis-ci.org/monolithed/grunt-mocha-client.png)](https://travis-ci.org/monolithed/grunt-mocha-client)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![License](http://img.shields.io/npm/l/object.assign.svg)](LICENSE.txt)
 
 
