@@ -16,6 +16,7 @@ var client = require('../utils/client');
 module.exports = function (grunt) {
 	grunt.registerMultiTask('mochaClient', 'Grunt task for run mocha test suite in browser', function () {
 		var options = this.options({
+			pretty   : true,
 			title    : 'Test Runner',
 			interface: 'bdd',
 		});
