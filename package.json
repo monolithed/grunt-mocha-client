@@ -1,0 +1,47 @@
+{
+	"name"   : "grunt-mocha-client",
+	"version": "0.0.1",
+	"author" : "Abashkin Alexander <monolithed@gmail.com>",
+	"homepage": "https://github.com/monolithed/grunt-mocha-client.git",
+
+	"description": "Grunt task for run mocha test suite in browser",
+
+	"keywords": [ "grunt", "mocha", "testing", "reporter" ],
+
+	"man": "README.md",
+
+	"engines": {
+		"node": ">=0.10.28"
+	},
+
+	"repository": {
+		"type": "git",
+		"url" :  "https://github.com/monolithed/grunt-mocha-client.git"
+	},
+
+	"bugs": {
+		"url": "https://github.com/monolithed/grunt-mocha-client/issues"
+	},
+
+	"scripts": {
+		"test": "grunt test"
+	},
+
+	"dependencies": {
+		"grunt": "^0.4.5",
+		"jade" : "^1.9.2"
+	},
+
+	"devDependencies": {
+		"grunt-contrib-nodeunit": "^0.4.1",
+		"grunt-hapi"            : "^0.9.1",
+		"hapi"                  : "^8.0.0"
+	},
+
+	"licenses": [
+		{
+			"type": "MIT",
+			"url" : "http://www.opensource.org/licenses/mit-license.php"
+		}
+	]
+}
