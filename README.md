@@ -70,6 +70,13 @@ module.exports = function (grunt) {
 ```
 
 
+### Preview
+
+```
+grunt preview
+```
+
+
 ### Tests
 
 ```
