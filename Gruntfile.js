@@ -25,14 +25,17 @@ module.exports = function (grunt) {
 		mochaClient: {
 			test: {
 				options: {
-					pretty   : true,
-					title    : 'Test example',
-					interface: 'bdd',
 					reporter : 'tests/fixtures/reporter.js',
 					styles   : 'tests/fixtures/mocha.css',
 					script   : 'tests/fixtures/mocha.js',
 				},
 
+				files: {
+					'cache/index.html': [ 'tests/fixtures/files/**/*.js' ]
+				}
+			},
+
+			preview: {
 				files: {
 					'cache/index.html': [ 'tests/fixtures/files/**/*.js' ]
 				}
@@ -46,8 +49,9 @@ module.exports = function (grunt) {
 
 	grunt.loadTasks('tasks');
 	grunt.loadNpmTasks('grunt-contrib-nodeunit');
+	grunt.loadNpmTasks('grunt-hapi');
 
 	grunt.registerTask('test', ['mochaClient:test', 'nodeunit']);
-	grunt.registerTask('preview', ['test', 'hapi:server']);
+	grunt.registerTask('preview', ['mochaClient:preview', 'hapi:server']);
 	grunt.registerTask('default', ['test']);
 };
