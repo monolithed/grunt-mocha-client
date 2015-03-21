@@ -2,7 +2,7 @@
 
 [![npm version badge](https://img.shields.io/npm/v/grunt-mocha-client.svg)](https://www.npmjs.org/package/grunt-mocha-client)
 [![Build Status](https://travis-ci.org/monolithed/grunt-mocha-client.png)](https://travis-ci.org/monolithed/grunt-mocha-client)
-[![License](http://img.shields.io/npm/l/object.assign.svg)](LICENSE.txt)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.txt)
 
 
 > Grunt task for run mocha test suite in browser

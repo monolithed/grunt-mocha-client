@@ -18,11 +18,11 @@ module.exports = function (grunt) {
 		var options = this.options({
 			pretty   : true,
 			title    : 'Test Runner',
-			interface: 'bdd',
+			interface: 'bdd'
 		});
 
-		options.script = client.mocha(options.script, 'js'),
-		options.styles = client.mocha(options.styles, 'css')
+		options.script = client.mocha(options.script, 'js');
+		options.styles = client.mocha(options.styles, 'css');
 
 		var tests = [];
 
@@ -48,7 +48,6 @@ module.exports = function (grunt) {
 					grunt.log.fail('[Test file reading]\n - %s', error);
 				}
 			});
-
 
 			if (options.reporter) {
 				try {
